@@ -1,0 +1,42 @@
+*
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+body
+{
+    background-color: black;
+}
+
+.navbar
+{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.navbar-default .navbar-nav li a
+{
+    color: white;
+}
+.navbar-default .navbar-nav li a:hover
+{
+    color: red;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.jumbotron
+{
+    height: 650px;
+    width: 100%;
+    background-image: url("../Site2.0-Bootstrap/assets/sitepic.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: difference;
+    box-shadow: 10px 10px 10px 10px black inset;
+    /* border-radius: 50%; */
+    /*Border radius not working well*/
+}
