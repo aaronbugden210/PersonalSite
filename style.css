@@ -1,8 +1,8 @@
 *
 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 body
@@ -20,12 +20,36 @@ body
 .navbar-default .navbar-nav li a
 {
     color: white;
+    position: relative;
+    text-decoration: none;
 }
+
+.navbar-default .navbar-nav li a::before
+{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    bottom: 13px;
+    left: 10px;
+    background-color: white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.navbar-default .navbar-nav li a:hover::before
+{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 .navbar-default .navbar-nav li a:hover
 {
-    color: red;
-    text-decoration: underline;
-    font-weight: 700;
+    color:white;
 }
 
 .jumbotron
