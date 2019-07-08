@@ -3,6 +3,7 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
+    color: white;
 }
 
 body
@@ -52,8 +53,15 @@ body
     color:white;
 }
 
+/* .collapse .navbar-collapse .navbar-nav li a:hover
+{
+    background-color: green;
+} 
+Want this to have the styling of elements in the collapsed menus change when collapsed and when hovering*/
+
 .jumbotron
 {
+    position: relative;
     height: 650px;
     width: 100%;
     background-image: url("../Site2.0-Bootstrap/assets/sitepic.jpg");
@@ -63,4 +71,48 @@ body
     box-shadow: 10px 10px 10px 10px black inset;
     /* border-radius: 50%; */
     /*Border radius not working well*/
+}
+
+.table
+{
+    border: 2px solid white;
+    /* border: 0px; */
+}
+
+tr
+{
+    /* border: 0px; */
+    margin: 0px auto;
+    padding: 0px;
+}
+
+td
+{
+    border: 2px solid white;
+    /* border: 0px; */
+    text-align: center;
+    margin: 0px auto;
+    width: auto;
+    height: 200px;
+}
+
+img
+{
+    width: 250px;
+    height: 187px;
+}
+
+article
+{
+    padding: 50px;
+}
+
+a
+{
+    font-weight: 700;
+}
+
+a.ghLinks:hover
+{
+    color: orange;
 }
