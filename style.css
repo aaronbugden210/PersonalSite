@@ -128,7 +128,7 @@ a.ghLinks:hover
     height: 200px;
 }
 
-.well
+.well .well-lg
 {
     color: black;
     /* background-color: purple; */
