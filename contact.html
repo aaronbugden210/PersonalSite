@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Aaron Bugden Website</title>
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600,700&display=swap" rel="stylesheet">
@@ -15,13 +15,14 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo"
+                    aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     Aaron Bugden
                 </a>
             </div>
@@ -31,7 +32,7 @@
                         <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item" id="loginBtn">
                         <a class="nav-link" href="#">Login</a>
@@ -40,20 +41,17 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="container">
-        <div class="jumbotron">
-            <h1>This is a jumbotron</h1>
-            <button class="btn btn-success btn-md" aria-pressed="true">JT Button</button>
+        <div class="input-group">
+            <h5>Enter your message here</h5>
+            <textarea id="emTxtArea"class="well well-lg" placeholder="Message me through email here" required>
+            </textarea>
+            <br>
+            <button id="submitBtn" class="btn btn-default" type="submit">Submit</button>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-xl-4 col-xl-offset-2 col-lg-4 col-lg-offset-2" >
-                <a href="https://github.com/aaronbugden210/Crystals-Collector" alt="Crystal Collector Repo"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Beavis_and_Butt-head_titlecard.png/250px-Beavis_and_Butt-head_titlecard.png"></a>
-            </div>
-        </div>
-        <br>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="main.js"></script>

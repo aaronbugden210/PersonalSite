@@ -53,12 +53,6 @@ body
     color:white;
 }
 
-/* .collapse .navbar-collapse .navbar-nav li a:hover
-{
-    background-color: green;
-} 
-Want this to have the styling of elements in the collapsed menus change when collapsed and when hovering*/
-
 .jumbotron
 {
     position: relative;
@@ -93,7 +87,7 @@ td
     text-align: center;
     margin: 0px auto;
     width: auto;
-    height: 200px;
+    height: 205px;
 }
 
 img
@@ -104,7 +98,9 @@ img
 
 article
 {
-    padding: 50px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a
@@ -115,4 +111,65 @@ a
 a.ghLinks:hover
 {
     color: orange;
+}
+
+#submitBtn
+{
+    background-color: blue;
+    border: 0px;
+    color: white;
+    width: 100px;
+    height: 45px;
+}
+
+#emTxtArea
+{
+    width: 600px;
+    height: 200px;
+}
+
+.well
+{
+    color: black;
+    /* background-color: purple; */
+}
+
+@media (max-width: 768px)
+{
+    /*These get rid of the animations on the navbar links
+    when in the collapsed menu*/
+    .navbar-default .navbar-nav li a
+    {
+        margin: 0 auto;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+    .navbar-default .navbar-nav li a::before
+    {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.0s ease-in-out 0s;
+        transition: all 0.0s ease-in-out 0s;
+    }
+
+    .navbar-default .navbar-nav li a:hover::before
+    {
+        visibility: visible;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+
+    .navbar-default .navbar-nav li a:hover
+    {
+        color:rgb(231, 20, 178);
+        background-color:  rgb(100, 88, 88);
+    }
 }
