@@ -3,7 +3,6 @@
     font-family: 'Fira Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: white;
 }
 
 body
@@ -98,6 +97,7 @@ img
 
 article
 {
+    color: rgb(0, 0, 0);
     padding-top: 40px;
     padding-left: 10px;
     padding-right: 10px;
@@ -115,11 +115,16 @@ a.ghLinks:hover
 
 #submitBtn
 {
-    background-color: blue;
+    background-color: rgb(0, 68, 255);
     border: 0px;
     color: white;
     width: 100px;
     height: 45px;
+}
+
+#submitBtn:hover
+{
+    border: 1px solid white;
 }
 
 #emTxtArea
@@ -128,10 +133,9 @@ a.ghLinks:hover
     height: 200px;
 }
 
-.well .well-lg
+#projects
 {
-    color: black;
-    /* background-color: purple; */
+    background-color: rgb(87, 21, 21);
 }
 
 @media (max-width: 768px)
