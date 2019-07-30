@@ -33,10 +33,10 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <li class="nav-item" id="loginBtn">
-                        <a class="nav-link" href="#">Login</a>
-                    </li>
+                    <!-- <li class="nav-item" id="loginBtn">
+                    </li> -->
                 </ul>
+                <button class="btn btn-default" id="loginBtn" type="button" data-toggle="modal" data-target="#loginModal">Login</button>
             </div>
         </div>
     </nav>
@@ -45,6 +45,24 @@
         <div class="jumbotron">
         </div>
         <br>
+    </div>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">Close</button>
+                    <h4 class="modal-title">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        Email: <input type="email"><br>
+                        Pasword: <input type="password"><br>
+                        <input type="submit" value="submit" id="modalSubmitBtn">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
