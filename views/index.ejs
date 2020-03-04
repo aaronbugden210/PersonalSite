@@ -1,0 +1,76 @@
+<%- include("partials/header") -%>
+    
+<div class="container">
+    <hr>
+    <h1>Full Stack Web Developer</h1>
+    <br>
+    <h3>Projects</h3>
+    <div class="row">
+        <% projects.forEach(function(project){ %>
+            <div class="col col-xl-4 col-lg-4 col-md-6 col-sm-12 portImg">
+                <a href="/<%= project._id %>">
+                    <img class="img-fluid" src="<%= project.image %>">
+                    <div class="overlay">
+                        <div class="overlayText"><%= project.name %></div>
+                    </div>
+                </a>
+            </div>
+        <% }); %>
+            <!-- <div class="col col-lg-4 col-md-4 col-sm-6 portImg">
+                <img src="./assets/evaPic.jpeg">
+                <div class="overlay">
+                    <div class="overlayText">hello world</div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 portImg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Beavis_and_Butt-head_titlecard.png/250px-Beavis_and_Butt-head_titlecard.png">
+                <div class="overlay">
+                    <div class="overlayText">hello world</div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 portImg">
+                <img src="https://cache.escapistmagazine.com/2019/07/06091716/stranger_things_season_3_2019_5k-1920x1080.jpg">
+                <div class="overlay">
+                    <div class="overlayText">hello world</div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 portImg">
+                <img src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1687,w_3000,x_0,y_0/dpr_1.5/c_limit,w_1600/fl_lossy,q_auto/v1573446366/191107-leon-rick-morty-tease_nmv5um">
+                <div class="overlay">
+                    <div class="overlayText">hello world</div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 portImg">
+                <img src="./assets/evaPic.jpeg">
+                <div class="overlay">
+                    <div class="overlayText">hello world</div>
+                </div>
+            </div>
+            <div class="col col-lg-4 col-md-4 col-sm-6 portImg">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4f/Beavis_and_Butt-head_titlecard.png/250px-Beavis_and_Butt-head_titlecard.png">
+                <div class="overlay">
+                    <div class="overlayText">hello world</div>
+                </div>
+            </div> -->
+    </div>
+</div>
+
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">Close</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+                <div class="modal-body">
+                <form>
+                    Email: <input type="email" id="emailInput"><br><br>
+                    Pasword: <input type="password"><br>
+                    <input type="submit" value="submit" id="modalSubmitBtn">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") -%>

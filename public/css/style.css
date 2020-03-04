@@ -1,0 +1,338 @@
+*
+{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+body
+{
+    background-color: rgb(194, 47, 37);
+    text-align: center;
+}
+
+.navbar
+{
+    background-color: rgb(194, 47, 37);
+    /* color: white; */
+    border: none;
+}
+
+.navbar-nav
+{
+    margin: 0;
+}
+
+.col
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* .col img
+{
+    width: 100%;
+    height: 100%;
+    transition: transform .2s;
+} */
+/*
+.col img:hover
+{
+    -ms-transform: scale(.95);
+    -webkit-transform: scale(.95);
+    transform: scale(.95);
+}
+*/
+
+/*CSS for navbar-brand*/
+.navbar .navbar-brand
+{
+    color: white;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+}
+
+.navbar .navbar-brand:hover
+{
+    color: #333;
+}
+
+.navbar li a
+{
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+/* .navbar li a::before
+{
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    bottom: 7px;
+    left: 10px;
+    background-color:white;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.navbar li a:hover::before
+{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+} */
+
+.navbar li a:hover
+{
+    color:white;
+}
+
+button.navbar-toggler
+{
+    border: 1px solid white;
+}
+
+span #navTog
+{
+    color: white;
+}
+
+
+/* #hireBtn
+{
+    background-color: rgb(21, 25, 36);
+    color: white;
+    border: 0px;
+    position: relative;
+    float: right;
+} */
+
+.thumbnail
+{
+    border-radius: 10px;
+    color: black;
+}
+
+.thumbImg
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: -1px 1px 6px 1px black;
+}
+
+.thumbImg:hover
+{
+    border: rgba(12, 8, 252, 0.5) 1px solid;
+}
+
+#crystals
+{
+    width: 350px;
+    height: 188px;
+}
+
+a
+{
+    font-weight: 700;
+}
+
+a.ghLinks:hover
+{
+    color: orange;
+}
+
+#submitBtn
+{
+    background-color: rgb(0, 68, 255);
+    border: 0px;
+    color: white;
+    width: 100px;
+    height: 45px;
+}
+
+#submitBtn:hover
+{
+    border: 1px solid white;
+}
+
+#emTxtArea
+{
+    width: 600px;
+    height: 200px;
+}
+
+#loginModal
+{
+    background-color: rgba(30, 139, 241, .2);
+}
+
+#modalSubmitBtn
+{
+
+}
+/*Need to get all images to fit col*/
+a img.img-fluid
+{
+    padding: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+/* .portImg
+{
+    width: 100%;
+    height: 100%;
+} */
+
+/******************************************/
+/*Styles for overlaying over images*/
+.overlay
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(60, 63, 66, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.overlayText
+{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.fas.fa-bars
+{
+    color: white;
+}
+/******************************************/
+@media (min-width: 993px)
+{
+    .portImg:hover .overlay
+    {
+        height: 15%;
+    }
+
+    .navbar li a.nav-link::before
+    {
+        content: "";
+        position: absolute;
+        width: 75%;
+        height: 2px;
+        bottom: 7px;
+        left: 13%;
+        background-color:white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s;
+    }
+
+    .navbar li a.nav-link:hover::before
+    {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px)
+{
+    /* .navbar li a::before
+    {
+        content: "";
+        position: absolute;
+        width: 75%;
+        height: 2px;
+        bottom: 7px;
+        left: 10px;
+        background-color:white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s;
+    }
+
+    .navbar li a:hover::before
+    {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    } */
+
+    .navbar li a
+    {
+        margin: 0 auto;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+    .navbar li a
+    {
+        color: white;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out;
+    }
+
+    .navbar li a:hover
+    {
+        color:#333;
+    }
+
+    .portImg:hover .overlay
+    {
+        height: 30%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    /*These get rid of the animations on the navbar links
+    when in the collapsed menu*/
+    .navbar li a
+    {
+        margin: 0 auto;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+
+    .navbar li a
+    {
+        color: white;
+        -webkit-transition: color 0.2s ease-out;
+        -moz-transition: color 0.2s ease-out;
+        -o-transition: color 0.2s ease-out;
+        transition: color 0.2s ease-out;
+    }
+
+    .navbar li a:hover
+    {
+        color:#333;
+    }
+
+    .portImg:hover .overlay
+    {
+        height: 30%;
+    }
+}
